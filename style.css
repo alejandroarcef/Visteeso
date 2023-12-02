@@ -524,6 +524,16 @@ footer{
 }
 
 @media screen and (max-width: 850px){
+
+    #link_inicio:hover{
+        box-shadow: 0px 0px 0px rgba(0,0,0,0.1);
+        transition-duration: 0.0s;
+    }
+
+    #label_menu:hover{
+        box-shadow: 0px 0px 0px rgba(0,0,0,0.1);
+        transition-duration: 0.0s;
+    }
     
     #barra_footer{
         top: 640px;
