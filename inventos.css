@@ -265,11 +265,38 @@ main{
 }
 
 .footer_articles{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     position: relative;
     height: 40px;
     width: 100%;
+    padding-right: 20px;
     background-color: var(--mostazaoo);
     border-radius: 0px 0px 8px 8px;
+}
+
+.footer_articles a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    width: 120px;
+    margin: 0px 10px;
+    padding: 5px;
+    background-color: var(--mostaza);
+    border-radius: 8px;
+    box-shadow: var(--shadow1);
+}
+
+.footer_articles a img{
+    height: 20px;
+}
+
+.footer_articles a h4{
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--grisoo);
 }
 
 #footer_general{
@@ -660,6 +687,21 @@ main{
         right: 0px;
     }
 
+    .footer_articles{
+        justify-content: center;
+        padding-right: 0px;
+    }
+
+    .footer_articles a{
+        width: 100px;
+        margin: 0px 5px;
+    }
+
+    .footer_articles a h4{
+        font-size: 16px;
+
+    }
+
     .contenido_footer{
         margin-top: 70px;
     }
@@ -671,6 +713,16 @@ main{
 }
 
 @media screen and (max-width: 370px) {
+
+    .footer_articles a{
+        width: 85px;
+        margin: 0px 2px;
+    }
+
+    .footer_articles a h4{
+        font-size: 12px;
+
+    }
 
     #tarjeta_creador{
         width: 300px;
