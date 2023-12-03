@@ -189,7 +189,9 @@ main{
 
 .anclas{
     position: relative;
-    margin-bottom: 45px;
+    top: -45px;
+    width: 1px;
+    height: 1px;
 }
 
 .articulos{
