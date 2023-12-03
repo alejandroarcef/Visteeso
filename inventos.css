@@ -187,6 +187,11 @@ main{
     position: relative;
 }
 
+.anclas{
+    position: relative;
+    margin-bottom: 45px;
+}
+
 .articulos{
     display: inline-block;
     position: relative;
