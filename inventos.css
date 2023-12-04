@@ -231,7 +231,7 @@ main{
     width: 100%;
 }
 
-#imagen_articulos{
+.imagen_articulos{
     top: -20px;
     display: inline-block;
     position: relative;
@@ -239,7 +239,7 @@ main{
     z-index: 1;
 }
 
-#imagen_articulos img{
+.imagen_articulos img{
     width: 100%;
 }
 
@@ -636,7 +636,7 @@ main{
         align-items: center;
     }
 
-    #imagen_articulos{
+    .imagen_articulos{
         width: 100%;
     }
 
