@@ -213,7 +213,7 @@ main{
     text-align: center;
     background-color: var(--mostaza);
     font-size: 32px;
-    color: var(--griso);
+    color: var(--grisoo);
     box-shadow: 0px 5px 10px rgba(0,0,0,0.5);
     margin-bottom: 20px;
     z-index: 3;
@@ -222,17 +222,20 @@ main{
 }
 
 .articulos p {
-    padding: 20px;
+    padding: 10px 20px;
+    
 }
 
 .contenedor_imagenparrafo{
     position: relative;
     display: flex;
     width: 100%;
+    background-color: var(--blanco00);
+    top: -20px;
 }
 
 .imagen_articulos{
-    top: -20px;
+    /* top: -20px; */
     display: inline-block;
     position: relative;
     width: 60%; 
@@ -265,8 +268,41 @@ main{
     text-align: left;  
 }
 
-#articulos article p{
-    padding: 20px;
+.main_articulos{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.main_articulos h3{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 0px 20px;
+    text-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+}
+
+.main_articulos h4{
+    display: inline;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.numeros_parrafos{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.negrita{
+    font-weight: bold;
 }
 
 .footer_articles{
@@ -274,7 +310,7 @@ main{
     justify-content: flex-end;
     align-items: center;
     position: relative;
-    height: 40px;
+    height: 50px;
     width: 100%;
     padding-right: 20px;
     background-color: var(--mostazaoo);
@@ -290,7 +326,7 @@ main{
     margin: 0px 10px;
     padding: 5px;
     background-color: var(--mostaza);
-    border-radius: 8px;
+    border-radius: 6px;
     box-shadow: var(--shadow1);
 }
 
@@ -494,7 +530,7 @@ main{
     top: 60px;
     right: 15px;
     height: 25px;
-    width: 100px;
+    width: 110px;
     border-radius: 4px;
     font-size: 18px;
     font-weight: bold;
@@ -714,7 +750,6 @@ main{
     #barra_footer{
         top: 1150px;
     }
-
 }
 
 @media screen and (max-width: 370px) {
