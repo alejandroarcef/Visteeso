@@ -235,7 +235,6 @@ main{
 }
 
 .imagen_articulos{
-    /* top: -20px; */
     display: inline-block;
     position: relative;
     width: 60%; 
