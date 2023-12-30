@@ -24,6 +24,8 @@
     --naranjamio: rgb(255,28,0);
 }
 
+
+
 body{
     background-color: var(--blanco25);
 }
@@ -45,7 +47,7 @@ body{
     position: fixed;
     width: 100vw;
     height: 100vh;
-    top: 0;
+    top: 0px;
     left: 0;
     margin: 0;
     padding: 0;
@@ -62,13 +64,6 @@ body{
     animation: animate 10s linear infinite;
 }
 
-.background li:nth-child(0) {
-    left: 71%;
-    width: 159px;
-    height: 159px;
-    bottom: -159px;
-    animation-delay: 0.5s;
-}
 .background li:nth-child(1) {
     left: 55%;
     width: 140px;
@@ -78,23 +73,23 @@ body{
     background: rgba(89, 0, 255, 0.5);
 }
 .background li:nth-child(2) {
-    left: 22%;
-    width: 189px;
-    height: 189px;
-    bottom: -189px;
+    left: 25%;
+    width: 190px;
+    height: 190px;
+    bottom: -190px;
     animation-delay: 4s;
     background: rgba(30, 255, 0, 0.5);
 }
 .background li:nth-child(3) {
-    left: 34%;
-    width: 168px;
-    height: 168px;
-    bottom: -168px;
+    left: 35%;
+    width: 170px;
+    height: 170px;
+    bottom: -170px;
     animation-delay: 0.5s;
     background: rgba(255, 38, 0, 0.5);
 }
 .background li:nth-child(4) {
-    left: 28%;
+    left: 30%;
     width: 145px;
     height: 145px;
     bottom: -145px;
@@ -110,26 +105,26 @@ body{
     background: rgba(255, 81, 0, 0.5);
 }
 .background li:nth-child(6) {
-    left: 69%;
-    width: 132px;
-    height: 132px;
-    bottom: -132px;
+    left: 70%;
+    width: 130px;
+    height: 130px;
+    bottom: -130px;
     animation-delay: 9s;
     background: rgba(17, 0, 255, 0.5);
 }
 .background li:nth-child(7) {
     left: 55%;
-    width: 151px;
-    height: 151px;
-    bottom: -151px;
+    width: 150px;
+    height: 150px;
+    bottom: -150px;
     animation-delay: 6s;
     background: rgba(255, 251, 0, 0.5);
 }
 .background li:nth-child(8) {
-    left: 23%;
-    width: 149px;
-    height: 149px;
-    bottom: -149px;
+    left: 25%;
+    width: 150px;
+    height: 150px;
+    bottom: -150px;
     animation-delay: 5s;
     background: rgba(89, 0, 255, 0.5);
 }
@@ -141,8 +136,6 @@ body{
     animation-delay: 5s;
     background: rgba(0, 255, 200, 0.5);
 }
-
-
 
 #ancla_header{
     top: 10px;
@@ -530,7 +523,7 @@ footer{
     top: 60px;
     right: 15px;
     height: 25px;
-    width: 100px;
+    width: 110px;
     border-radius: 4px;
     font-size: 18px;
     font-weight: bold;

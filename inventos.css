@@ -24,60 +24,87 @@
 }
 
 body{
-    background-color: var(--blanco25);
+    animation-name: gradiente;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
 }
 
-body {
-    margin: auto;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    overflow: auto;
-    background: linear-gradient(315deg, rgba(101,0,94,1) 3%, rgba(60,132,206,1) 38%, rgba(48,238,226,1) 68%, rgba(255,25,25,1) 98%);
-    animation: gradient 15s ease infinite;
-    background-size: 400% 400%;
-    background-attachment: fixed;
+@keyframes gradiente {
+
+    0%{
+        background-color: dodgerblue;  
+    }
+
+    50%{
+        background-color: rgb(10, 75, 139); 
+        
+    }
+
+    100%{
+        background-color: dodgerblue;
+        
+    }
+    
 }
 
-@keyframes gradient {
-    0% {
-        background-position: 0% 0%;
-    }
-    50% {
-        background-position: 100% 100%;
-    }
-    100% {
-        background-position: 0% 0%;
-    }
+.wave__conteiner{
+    position: relative;
+    display: flex;
+    justify-content: center;
 }
 
-.wave {
-    background: rgb(255 255 255 / 25%);
-    border-radius: 1000% 1000% 0 0;
+.wave{
+    position: relative;
+    background-color: rgba(0,0,0,0.3);
+    border-radius:100% 100% 0% 0%;
     position: fixed;
-    width: 200%;
-    height: 12em;
-    animation: wave 10s -3s linear infinite;
-    transform: translate3d(0, 0, 0);
+    width: 400%;
+    height: 200px;
+    animation: wave 8s 6s linear infinite;
     opacity: 0.8;
     bottom: 0;
-    left: 0;
     z-index: -1;
 }
 
 .wave:nth-of-type(2) {
-    bottom: -1.25em;
-    animation: wave 18s linear reverse infinite;
-    opacity: 0.8;
+    bottom: -25px;
+    animation: wave 16s 3s linear reverse infinite;
+    opacity: 0.7;
 }
 
 .wave:nth-of-type(3) {
-    bottom: -2.5em;
-    animation: wave 20s -1s reverse infinite;
-    opacity: 0.9;
+    bottom: -50px;
+    animation: wave 18s 5s reverse infinite;
+    opacity: 0.7;
+}
+
+.wave:nth-of-type(4) {
+    bottom: -75px;
+    animation: wave 7s 2s reverse infinite;
+    opacity: 0.7;
+}
+
+.wave:nth-of-type(5) {
+    bottom: -100px;
+    animation: wave 11s 4s reverse infinite;
+    opacity: 0.7;
+}
+
+.wave:nth-of-type(6) {
+    bottom: -125px;
+    animation: wave 5s 6s reverse infinite;
+    opacity: 0.7;
+}
+
+.wave:nth-of-type(7) {
+    bottom: -150px;
+    animation: wave 4s 7s reverse infinite;
+    opacity: 0.7;
 }
 
 @keyframes wave {
     2% {
-        transform: translateX(1);
+        transform: translateX(0%);
     }
 
     25% {
@@ -85,15 +112,15 @@ body {
     }
 
     50% {
-        transform: translateX(-50%);
+        transform: translateX(0%);
     }
 
     75% {
-        transform: translateX(-25%);
+        transform: translateX(25%);
     }
 
     100% {
-        transform: translateX(1);
+        transform: translateX(0%);
     }
 }
 
@@ -295,6 +322,8 @@ main{
 
 .articulos p {
     padding: 10px 20px;
+    font-weight: 500;
+    font-size: 17px;
     
 }
 
@@ -302,7 +331,7 @@ main{
     position: relative;
     display: flex;
     width: 100%;
-    background-color: var(--blanco00);
+    background-color: bisque;
     top: -20px;
 }
 
@@ -311,6 +340,7 @@ main{
     position: relative;
     width: 60%; 
     z-index: 1;
+    margin-bottom: -5px;
 }
 
 .imagen_articulos img{
@@ -343,6 +373,7 @@ main{
     display: flex;
     flex-direction: column;
     margin-top: 50px;
+    padding: 20px;
 }
 
 .main_articulos h3{
@@ -797,6 +828,10 @@ main{
 
     #label_menu{
         right: 0px;
+    }
+
+    .main_articulos{
+        padding: 0px;
     }
 
     .footer_articles{
