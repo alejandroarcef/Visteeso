@@ -124,8 +124,6 @@ body{
     }
 }
 
-
-
 #ancla_header{
     top: 10px;
 }
@@ -421,10 +419,10 @@ main{
 
 .footer_articles a{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: 30px;
-    width: 120px;
+    width: 60px;
     margin: 0px 10px;
     padding: 5px;
     background-color: var(--mostaza);
@@ -432,8 +430,13 @@ main{
     box-shadow: var(--shadow1);
 }
 
-.footer_articles a img{
+.fcompartir{
+    height: 15px;
+}
+
+.img_logo-footer-articulos{
     height: 20px;
+    margin-right: 5px;
 }
 
 .footer_articles a h4{
@@ -686,7 +689,7 @@ main{
     #parrafo_somos_footer{
         width: 300px;
     }
-    
+ 
 }
 
 @media screen and (max-width: 1250px) {
@@ -730,7 +733,6 @@ main{
         top: 750px;
     }
 
-
     #menu li{
         position: relative;
         background-color: var(--mostaza);
@@ -765,8 +767,6 @@ main{
 
     .articulos{
         max-width: 600px;
-        margin-left: 20px;
-        margin-right: 20px;
     }
 
     .contenedor_imagenparrafo{
@@ -791,7 +791,6 @@ main{
     .contenido_footer{
         margin-top: 70px;
     }
-
 }
 
 @media screen and (max-width: 840px){
@@ -801,13 +800,23 @@ main{
 
     #tarjeta_creador{
         top: 870px;
-
     }
 
     .contenido_footer{
         margin-top: 70px;
     }
 
+}
+
+@media screen and (max-width:600px) {
+
+    .footer_articles{
+        border-radius: 0px 0px 0px 0px;
+    }
+
+    .articulos h2{
+        border-radius: 0px 0px 0px 0px;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -819,7 +828,6 @@ main{
 
     #logo_header img{
         width: 300px;
-
     }
 
     #link_inicio{
@@ -840,13 +848,12 @@ main{
     }
 
     .footer_articles a{
-        width: 100px;
+        width: 60px;
         margin: 0px 5px;
     }
 
     .footer_articles a h4{
         font-size: 16px;
-
     }
 
     .contenido_footer{
@@ -861,7 +868,7 @@ main{
 @media screen and (max-width: 370px) {
 
     .footer_articles a{
-        width: 85px;
+        width: 60px;
         margin: 0px 2px;
     }
 
@@ -873,7 +880,6 @@ main{
     #tarjeta_creador{
         width: 300px;
         height: 175px;
-
     }
 
     #logo_creador{
