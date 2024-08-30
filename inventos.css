@@ -2,7 +2,6 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: candara, Arial, Helvetica, sans-serif;
     text-decoration: none;
 }
 
@@ -27,6 +26,7 @@ body{
     animation-name: gradiente;
     animation-duration: 12s;
     animation-iteration-count: infinite;
+    font-family: candara, Arial, Helvetica, sans-serif;
 }
 
 @keyframes gradiente {
@@ -188,7 +188,7 @@ nav h2{
     transition-duration: 0.5s;
 }
 
-#label_menu{
+#label_indice{
     display: inline-block;
     position: relative;
     right: 40px;
@@ -201,47 +201,47 @@ nav h2{
     cursor: pointer;
 }
 
-#label_menu:hover{
+#label_indice:hover{
     box-shadow: var(--shadow2);
     transition-duration: 0.5s;
 }
 
-#check_menu{
+#check_indice{
     display: none;
 }
 
-#contenedor_menu{
+#contenedor_indice{
     position: fixed;
     right: -50px;
-    top: -200px;
+    top: 0px;
     width: 250px;
     height: 100vh;
     background-color: var(--griso);
     transition-duration: 1s;
     z-index: 10;
+    overflow: scroll;
+    box-shadow: -5px 0px 5px rgba(0,0,0,0.5);
 }
 
-:checked ~ #contenedor_menu{
+:checked ~ #contenedor_indice{
     right: -300px;
 }
 
-#menu{
+#indice_menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: relative;
-    height: 150vh;
+    background-color: var(--grisoo);
+    padding: 5px;
+    padding-top: 200px;
     width: 200px;
-    padding-top: 400px;
-    text-align: center;
-    background-color: var(--griso);
-    box-shadow: -5px 5px 5px rgba(0,0,0,0.5); 
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-#menu ul{
-    list-style: none;
-}
-
-#logo_menu{
+#logo_indice{
     position: absolute;
-    top: 270px;
+    top: 60px;
     left: 50%;
     transform: translateX(-50%);
     height: 100px;
@@ -249,25 +249,60 @@ nav h2{
     border-radius: 50%;
 }
 
-#logo_menu img{
+#logo_indice img{
     height: 100px;
     width: 100px;
 }
 
-#menu li a{
-    display: inline-block;
-    position: relative;
-    width: 100%;
-    padding: 10px;
-    color: var(--blanco00);
-    font-size: 21px;
-    font-weight: bold;
-    cursor: pointer;
+#creador_indice{
+    background-color: var(--naranjamio);
+    box-shadow: var(--shadow1);
+    margin: 10px;
+    padding: 2px 10px;
+    border-radius: 3px;
+    animation-name: movimientosexy;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 
-#menu a:hover{
+#creador_indice h4 a{
     color: var(--griso);
+    font-weight: bold;
+}
+
+.letras{
+    background-color: var(--grisoo);
+    margin: 5px 0px;
+    padding: 0px 0px 5px 0px;
+    width: 170px;
+}
+
+summary{
+    background-color: var(--griso);
+    margin: 0px 0px 3px 0px;
+    width: 100%;
+    padding-left: 5px;
+    font-weight: bold;
+    color: var(--blanco25);
+    box-shadow: var(--shadow2);
+}
+
+summary:hover{
     background-color: var(--mostaza);
+    color: var(--griso);
+}
+
+.indice_articulos h4{
+    text-decoration: none;
+    color: var(--blanco00);
+    background-color: var(--griso);
+    padding: 3px 5px 3px 15px;
+    margin: 5px;
+}
+
+.indice_articulos h4:hover{
+    background-color: var(--mostaza);
+    color: var(--griso);
 }
 
 main{
@@ -733,24 +768,6 @@ main{
         top: 750px;
     }
 
-    #menu li{
-        position: relative;
-        background-color: var(--mostaza);
-        margin-bottom: 10px;
-        width: 180px;
-        left: 50%;
-        transform: translateX(-50%);
-        padding: 1px;
-        box-shadow: var(--shadow2);
-        border-radius: 8px;
-    }
-
-    #menu li a{
-        padding: 5px 5px;
-        color: var(--griso);
-        width: 180px;
-    }
-
 }
 
 @media screen and (max-width: 850px){
@@ -760,7 +777,7 @@ main{
         transition-duration: 0.0s;
     }
 
-    #label_menu:hover{
+    #label_indice:hover{
         box-shadow: 0px 0px 0px rgba(0,0,0,0.1);
         transition-duration: 0.0s;
     }
@@ -834,7 +851,7 @@ main{
         left: 0px;
     }
 
-    #label_menu{
+    #label_indice{
         right: 0px;
     }
 
