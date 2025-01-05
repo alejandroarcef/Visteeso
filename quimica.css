@@ -377,7 +377,7 @@ main{
 }
 
 .imagen_articulos img{
-    width: 80%;
+    width: 100%;
 }
 
 #indice{
@@ -985,7 +985,7 @@ hr{
     }
 
     .rueda_img_articulos img{
-        height: 180px;
+        height: 200px;
     }
 
     .footer_articles{
